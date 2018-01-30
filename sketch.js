@@ -1,21 +1,21 @@
-var x = 300;
-var y = 200;
-var speedx = 8;
-var speedy = 6;
+var x = 320;
+var y = 300;
+var speedx = 10;
+var speedy = 23;
 
 
 function setup(){
-    createCanvas(600,400);
+    createCanvas(300,600)
 }
 
 function draw(){
-    background(0);
+    background(8);
 
     //display ball
-    stroke(255);
-    strokeWeight(4);
-    fill(50,250,50);
-    ellipse(x, y, 50, 50);
+    stroke(321);
+    strokeWeight(6);
+    fill(34,250,55);
+    ellipse(x,y, 55, 50);
 
     
     //make ball move
@@ -23,7 +23,7 @@ function draw(){
     x = x + speedx;
     
     //ball changes direction when it hits wall
-    if(x>600 || x<0){
+    if(x>600 || x<3){
         speedx = -speedx;
     }
      if(y>400 || y<0){
